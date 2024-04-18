@@ -33,13 +33,22 @@ namespace BinaryTree.Class
             newNode.Data = value;
 
             if (this.Root == null)//Tree ise empty
+            {
                 this.Root = newNode;
+                Console.WriteLine("Adding {0} to the root:",newNode.Data);
+            }
             else
             {
                 if (value < before.Data)
+                {
                     before.LeftNode = newNode;
+                    Console.WriteLine("Adding {0} to the left of {1}:", value, before.Data);
+                }
                 else
+                {
                     before.RightNode = newNode;
+                    Console.WriteLine("Adding {0} to the right of {1}:", value, before.Data);
+                }
             }
 
             return true;
