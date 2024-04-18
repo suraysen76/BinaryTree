@@ -4,7 +4,9 @@ using BinaryTree.Model;
 Console.WriteLine("Start!");
 BinaryTree.Class.BinaryTree binaryTree = new BinaryTree.Class.BinaryTree();
 
-int[] input = { 1, 2, 7, 3, 10, 5, 8 };
+//int[] input = { 1, 2, 7, 3, 10, 5, 8 };
+//int[] input = { 50 , 30, 70, 20, 40 }root = insert(root, 8);
+int[] input = { 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15 };
 var output = String.Empty;
 foreach (var itm in input)
 {   
